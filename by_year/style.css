@@ -1,0 +1,42 @@
+.year{
+    text-align: center;
+}
+
+.go_back{
+    float: left;
+    margin-left: 70px;
+}
+
+.search{
+    float: right;
+    margin-right: 70px;
+}
+
+#project_card,#project_card_2,#project_card_3,#project_card_4{
+    display: flex;
+    width: 1000px;
+    height: 300px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#box{
+    width: 250px;
+    height: 250px;
+    margin-top: 80px;
+    margin-left: 25px;
+    margin-right: 25px;
+    box-shadow: 3px 3px 10px 1px gray;
+    text-align: center;
+    clear: both;
+    padding: 10px;
+}
+
+#box>img{
+    width: 230px;
+    height: 160px;
+}
+
+#box>h3{
+    margin: 0px;
+}

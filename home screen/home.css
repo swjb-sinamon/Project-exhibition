@@ -1,0 +1,61 @@
+.section input[id*="slide"]{
+    display: none;
+  }
+  .section .slidewrap {
+    max-width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  .section .slidelist {
+    white-space: nowrap;
+    font-size: 0;
+  }
+  .section .slidelist > li {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    transition: all .5s;
+  }
+  .section .slidelist > li > a {
+    display: block;
+    position: relative;
+  }
+  .section .slidelist > li > a img {
+    width: 100%;
+  }
+  .section .slidelist label {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 50px;
+    cursor: pointer;
+  }
+  .section .slidelist .left {
+    left: 30px;
+    background: url('./left.png') center center / 100% no-repeat;
+  }
+  .section .slidelist .right {
+    right: 30px;
+    background: url('./right.png') center center / 100% no-repeat;
+  }
+  .section [id="slide01"]:checked ~ .slidewrap .slidelist > li {transform:translateX(0%);}
+  .section [id="slide02"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-100%);}
+  .section [id="slide03"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-200%);}
+
+  .section .slide-control [class*="control"] {display: none;}
+  .section [id="slide01"]:checked ~ .slidewrap .control01 {display: block;}
+  .section [id="slide02"]:checked ~ .slidewrap .control02 {display: block;}
+  .section [id="slide03"]:checked ~ .slidewrap .control03 {display: block;}
+.outbox {
+    display: block;
+}
+.outbox .box{
+    transition: transform 1.5s;
+}
+.outbox .box:hover{transform: translate(-1%,-1%) scale(1.08);}
+
+.outbox .endbox{
+    transition: transform 1.5s;
+}
+.outbox .endbox:hover{transform: translate(-1%,-1%) scale(1.08);}

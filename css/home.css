@@ -33,11 +33,11 @@
   }
   .section .slidelist .left {
     left: 30px;
-    background: url('./left.png') center center / 100% no-repeat;
+    background: url('/Project-exhibition/img/left.png') center center / 100% no-repeat;
   }
   .section .slidelist .right {
     right: 30px;
-    background: url('./right.png') center center / 100% no-repeat;
+    background: url('/Project-exhibition/img/right.png') center center / 100% no-repeat;
   }
   .section [id="slide01"]:checked ~ .slidewrap .slidelist > li {transform:translateX(0%);}
   .section [id="slide02"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-100%);}

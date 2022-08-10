@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* body{
+    margin: 0 auto;
+} */
+
+.yaer{
+    width: 80vw;
+    margin: 0 auto;
+}
+
+header{
+    width: 80vw;
+    height: 100px;
+    position: relative;
+    float: left;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+header .icon {
+    float: left;
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    margin: 0 auto;
+}
+
+header h1{
+    float: left;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateY(-50%);
+}
+
+header .search-box{
+    float: left;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+.search-box .search{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.search input {
+    width: 100%;
+    height: 30px;
+    border-radius: 20px;
+    box-shadow: 1px 0.699999988079071px 1px 0px rgba(149, 157, 160, 0.42);
+    box-shadow: inset 5px 4px 7px 0px rgba(149, 157, 160, 0.42);
+}
+
+.search span{
+    position: absolute;
+    top : 5px;
+    right: 10px;
+}
+
+.contents{
+    width: 100%;
+}
+
+.project_card{
+    width: 100%;
+    margin-bottom: 30px;
+    float: left;
+}
+
+.project_box{
+    float: left;
+    margin-right: 15px;
+    width: 300px;
+    height: 271.62px;
+    box-shadow: 4px 5px 7px 0px rgba(149, 157, 160, 0.6);
+
+}
+
+.project_box .img_box{
+    width: 260.27px;
+    height: 155.68px;
+    background-color: #F7FBFD;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.project_box .img_box img{
+    width: 260.27px;
+    height: 146.76px;
+}

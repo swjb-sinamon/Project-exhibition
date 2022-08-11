@@ -1,0 +1,175 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/* body{
+  margin: 0 auto;
+} */
+
+.yaer{
+  width: 80vw;
+  margin: 0 auto;
+}
+
+header{
+  width: 80vw;
+  height: 100px;
+  position: relative;
+  float: left;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+header .icon {
+  float: left;
+  position: absolute;
+  top: 10px;
+  left: 30px;
+  margin: 0 auto;
+}
+
+header h1{
+  float: left;
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateY(-50%);
+}
+
+header .search-box{
+  float: left;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.search-box .search{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.search input {
+  width: 100%;
+  height: 30px;
+  border-radius: 20px;
+  box-shadow: 1px 0.699999988079071px 1px 0px rgba(149, 157, 160, 0.42);
+  box-shadow: inset 5px 4px 7px 0px rgba(149, 157, 160, 0.42);
+}
+
+.search span{
+  position: absolute;
+  top : 5px;
+  right: 10px;
+}
+
+.contents{
+  width: 100%;
+}
+
+.project_card{
+  width: 100%;
+  margin-bottom: 30px;
+  float: left;
+}
+
+.project_box{
+  position: relative;
+  float: left;
+  margin-right: 15px;
+  width: 300px;
+  height: 271.62px;
+  box-shadow: 4px 5px 7px 0px rgba(149, 157, 160, 0.6);
+  background-color: #F7FBFD;
+}
+
+.project_box .img_box{
+  width: 260.27px;
+  height: 155.68px;
+  background-color: black;
+  margin-bottom: 5px;
+  padding: 10px;
+}
+
+.project_box .img_box img{
+  width: 100%;
+  height: 146.76px;
+}
+
+.project_box .fix-box {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.project_box .fix-box .delete{
+  width: 70px;
+  height: 30px;
+  border: 0;
+  border-radius: 7px;
+  color: #fff;
+  background-color: #FD6059;
+}
+
+.project_box .fix-box .fix{
+  width: 70px;
+  height: 30px;
+  border: 0;
+  border-radius: 7px;
+  color: #fff;
+  background-color: #34C85A;
+}
+
+
+.msg_box{
+  position: fixed;
+  left:50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+  z-index: 100;;
+  width: 500px;
+  height: 200px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: white;
+  display: none;
+}
+
+.msg_box p {
+  width: 100%;
+  margin-top: 40px;
+  font-size: 20px;
+  margin-left: 150px;
+
+}
+
+.msg_box .button-box{
+  width: 100%;
+  height: 150px;
+  position: relative;
+}
+
+.msg_box button{
+  width: 100px;
+  height: 30px;
+  border: 0;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 70px;
+  right: 250px;
+}
+
+.msg_box button:last-child{
+  right: 140px;
+}
+
+.msg_box .yes{
+  background-color: #0075E8;
+  color: #fff;
+}
+
+.msg_box .no{
+  background-color: #B4B4B4;
+}
+

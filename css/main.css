@@ -1,148 +1,127 @@
-/*레이아웃 CSS*/
-img {
-  object-fit: cover;
+*{
+  margin: 0;
+  padding: 0;
 }
-.slide {
-  width: 82%;
-  height: 460px;
-  border: 1px black solid;
-  margin: 0 auto;
-  border-radius: 8px;
+
+.main {
   margin-top: 80px;
 }
-.main {
-  width: 82%;
-  height: 1500px;
-  border: 1px black dotted;
-  margin: 40px auto 0;
-
+.slide{
+  width: 80vw;
+  height: 500px;
+  border: 1px solid black;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
 }
-.box {
-  width: 355.85px;
-  height: 213px;
-  border: 1px black solid;
-  margin-right: 30px;
+
+.img-box {
+  width: 100%;
+  height: 100%;
+}
+
+.img-box img{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 80vw;
+}
+
+.img-box img:first-child {
+  left:0;
+}
+
+.button-box {
+  width: 100%;
+  z-index: 100;
+  position: absolute;
+  top: 50%; left: 0;
+  transform: translateY(-50%);
+}
+
+.button {
+  position: relative;
+  width: 100%;
+}
+
+.button .left {
+  position: absolute;
+  top: 0;
+  left: 10px;
+}
+
+.button .right {
+  position: absolute;
+  top: 0;
+  right: 10px;
+}
+
+.button span {
+  font-size: 40px;
+}
+
+.yaer{
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.contents{
+  width: 100%;
+}
+
+.project_card{
+  width: 100%;
+  margin-bottom: 30px;
   float: left;
-
 }
-.endbox {
-  width: 355.85px;
-  height: 213px;
-  border: 1px black solid;
+
+.yaer-btn {
+  width: 100%;
+  height: 100px;
+  position: relative;
   float: left;
 }
-.year {
-  width: 100;
-  height: 370px;
-  border: 1px black dotted;
+
+.yaer-text {
+  width: 10%;
+  height: 50px;
+  border: 0;
+  background-color: inherit;
+  position: absolute;
+  top: 50px;
+  left: 10px;
+  transform: rotateY(-50%);
+  font-size: 20px;
 }
 
-  /*슬라이드CSS*/
-  .section input[id*="slide"]{
-    display: none;
-  }
-  .section .slidewrap {
-    max-width: 600px;
-    margin: 0 auto;
-    overflow: hidden;
-  }
-  .section .slidelist {
-    white-space: nowrap;
-    font-size: 0;
-  }
-  .section .slidelist > li {
-    display: inline-block;
-    vertical-align: middle;
-    width: 100%;
-    transition: all .5s;
-  }
-  .section .slidelist > li > a {
-    display: block;
-    position: relative;
-  }
-  .section .slidelist > li > a img {
-    width: 100%;
-  }
-  .section .slidelist label {
-    position: absolute;
-    z-index: 10;
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 50px;
-    cursor: pointer;
-  }
-  .section .slidelist .left {
-    left: 30px;
-    background: url('/left.png') center center / 100% no-repeat;
-  }
-  .section .slidelist .right {
-    right: 30px;
-    background: url('/right.png') center center / 100% no-repeat;
-  }
-  .section [id="slide01"]:checked ~ .slidewrap .slidelist > li {transform:translateX(0%);}
-  .section [id="slide02"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-100%);}
-  .section [id="slide03"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-200%);}
+.yaer-btn span {
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
 
-  .section .slide-control [class*="control"] {display: none;}
-  .section [id="slide01"]:checked ~ .slidewrap .control01 {display: block;}
-  .section [id="slide02"]:checked ~ .slidewrap .control02 {display: block;}
-  .section [id="slide03"]:checked ~ .slidewrap .control03 {display: block;}
-  /*년도별 박스 CSS*/
-  .outbox {
-      display: block;
-  }
-  .outbox .box {
-      transition: transform 0.7s;
-  }
-  .outbox .box:hover {
-      transform: translate(-1%,-1%) scale(1.05);
-  }
+.project_box{
+  float: left;
+  margin-right: 15px;
+  width: 300px;
+  height: 271.62px;
+  box-shadow: 4px 5px 7px 0px rgba(149, 157, 160, 0.6);
 
-  .outbox .endbox {
-      transition: transform 0.7s;
-  }
-  .outbox .endbox:hover {
-      transform: translate(-1%,-1%) scale(1.05);
-  }
+}
 
-  .box > img {
-      width: 300px;
-      margin-left: 30px;
-      height: 130px;
-      margin-top: 15px;
-  }
+.project_box .img_box{
+  width: 260.27px;
+  height: 155.68px;
+  background-color: #F7FBFD;
+  margin: 0 auto;
+  padding: 10px;
+}
 
-  .endbox > img {
-      width: 300px;
-      margin-left: 30px;
-      height: 130px;
-      margin-top: 15px;
-  }
-
-  button{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #004fff;
-    border: none;
-    color: white;
-    box-shadow: 0 4px 16px rgba(0, 79, 255, 0.3);
-    font-size: 25px;
-    font-weight: bold;
-    margin: 0 auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: 0.3s;
-  }
-  /*버튼css*/
-  button:focus{
-    outline: 0;
-  }
-
-  button:hover{
-    background-color: rgba(0, 79, 255, 0.9);
-    cursor: pointer;
-    box-shadow: 0 2px 4px rgba(0, 79, 255, 0.6);
-  }
+.project_box .img_box img{
+  width: 260.27px;
+  height: 146.76px;
+}

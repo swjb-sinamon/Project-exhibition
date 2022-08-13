@@ -1,10 +1,6 @@
 document.querySelector('.go-back').addEventListener("click", ()=>{
-    history.back();
-    link = 'main.html'
-    if(history.state == null){
-        location.href  = link;
-    }
-})
+  history.back();
+});
 
 function filter() {
     let search = document.getElementById("search").value.toLowerCase();
@@ -20,4 +16,4 @@ function filter() {
         project_box[i].style.display = "none";
       }
     }
-  }
+}

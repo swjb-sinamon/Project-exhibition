@@ -1,3 +1,7 @@
+document.querySelector('.go-back').addEventListener("click", ()=>{
+  history.back();
+});
+
 const del = document.querySelectorAll(".delete");
 
 del.forEach( e => {

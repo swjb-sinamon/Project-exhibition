@@ -6,20 +6,6 @@ const yearText = document.querySelectorAll('.year-text');
 let index = 0;
 const length = imgs.length-1;
 
-// function playSlide() {
-//   if(index <= length) {
-//     imgs[index].style.left = "-80vw";
-//     if(index+1 > length) {
-//       imgs[0].style.left = "80vw";
-//     }else {
-//       imgs[index+1].style.left = "0";
-//     }
-//   }else {
-//     index = 0;
-//   }
-//   index++;
-// }
-
 left.addEventListener("click", e=>{
   if(index == 0){
     imgs[index].style.left = "80vw";
@@ -75,4 +61,18 @@ let i = 0;
 yearText.forEach(e => {
   e.innerText = year-i;
   i++;
+});
+
+const bottomButton = document.querySelector('.bottom-button');
+let count = 0;
+
+bottomButton.addEventListener('click', () => {
+  const bottomMenu = document.querySelector('.bottom-menu');
+  if(count == 0){
+    bottomMenu.style.display = "block";
+    count++;
+  }else {
+    bottomMenu.style.display = "none";
+    count = 0;
+  }
 })

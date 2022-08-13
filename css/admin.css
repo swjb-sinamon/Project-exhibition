@@ -3,10 +3,6 @@
   padding: 0;
 }
 
-/* body{
-  margin: 0 auto;
-} */
-
 .yaer{
   width: 80vw;
   margin: 0 auto;
@@ -21,12 +17,14 @@ header{
   margin-bottom: 20px;
 }
 
-header .icon {
+header > span {
   float: left;
   position: absolute;
-  top: 10px;
+  top: 33px;
   left: 30px;
   margin: 0 auto;
+  text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.13);
+  font-size: 22px;
 }
 
 header h1{
@@ -52,16 +50,19 @@ header .search-box{
 
 .search input {
   width: 100%;
-  height: 30px;
+  height: 33px;
   border-radius: 20px;
-  box-shadow: 1px 0.699999988079071px 1px 0px rgba(149, 157, 160, 0.42);
-  box-shadow: inset 5px 4px 7px 0px rgba(149, 157, 160, 0.42);
+  border: 0;
+  background-color: #F7FBFD;
+  box-shadow: inset 3px 3px 5px 0px rgba(149, 157, 160, 0.33), 1px 0.7px 1px 0px rgba(149, 157, 160, 0.42);
 }
 
 .search span{
   position: absolute;
   top : 5px;
   right: 10px;
+  color: #006AA8;
+  font-weight:600;
 }
 
 .contents{
@@ -77,10 +78,12 @@ header .search-box{
 .project_box{
   position: relative;
   float: left;
-  margin-right: 15px;
+  margin-right: 35px;
+  margin-bottom: 7px;
   width: 300px;
   height: 271.62px;
-  box-shadow: 4px 5px 7px 0px rgba(149, 157, 160, 0.6);
+  border-radius: 7px;
+  box-shadow: inset 0.7px 0.7px 7px 0px rgba(149, 157, 160, 0.3), 4px 5px 7px 0px rgba(149, 157, 160, 0.6);
   background-color: #F7FBFD;
 }
 
@@ -104,24 +107,49 @@ header .search-box{
 }
 
 .project_box .fix-box .delete{
-  width: 70px;
-  height: 30px;
+  width: 68px;
+  height: 32px;
   border: 0;
-  border-radius: 7px;
+  border-radius: 3px;
   color: #fff;
+  font-weight: bold;
+  font-size: 15px;
   background-color: #FD6059;
+  box-shadow: 4px 3px 5px 0px rgba(0, 0, 0, 0.17) inset;
+  margin-right: 3px;
+  margin-bottom: 3px;
 }
 
 .project_box .fix-box .fix{
-  width: 70px;
-  height: 30px;
+  width: 68px;
+  height: 32px;
   border: 0;
-  border-radius: 7px;
+  border-radius: 3px;
   color: #fff;
+  font-weight: bold;
+  font-size: 15px;
   background-color: #34C85A;
+  box-shadow: 4px 3px 5px 0px rgba(0, 0, 0, 0.2) inset;
+  margin-right: 3px;
+  margin-bottom: 3px;
+}
+
+.project_box .fix-box .accepted{
+  width: 68px;
+  height: 32px;
+  border: 0;
+  border-radius: 3px;
+  color: #fff;
+  font-weight:bold;
+  font-size: 15px;
+  background-color: #B4B4B4;
+  box-shadow: 4px 3px 5px 0px rgba(0, 0, 0, 0.2) inset;
+  margin-right: 3px;
+  margin-bottom: 3px;
 }
 
 
+/* 메세지 박스 */
 .msg_box{
   position: fixed;
   left:50%;
@@ -130,18 +158,17 @@ header .search-box{
   z-index: 100;;
   width: 500px;
   height: 200px;
-  border: 1px solid black;
-  border-radius: 10px;
-  background-color: white;
   display: none;
+  border: 0;
+  background-color: #fff;
+  box-shadow: 2px 2px 20px 0px rgba(0, 0, 0, 0.25);
 }
 
 .msg_box p {
   width: 100%;
-  margin-top: 40px;
+  margin-top: 45px;
   font-size: 20px;
   margin-left: 150px;
-
 }
 
 .msg_box .button-box{
@@ -167,9 +194,15 @@ header .search-box{
 .msg_box .yes{
   background-color: #0075E8;
   color: #fff;
+  box-shadow: 2px 1px 5px 0px rgba(0, 0, 0, 0.1) inset;
+  font-weight: bold;
+  font-size: 14px;
 }
 
 .msg_box .no{
-  background-color: #B4B4B4;
+  background-color: #ddd;
+  box-shadow: 2px 1px 5px 0px rgba(0, 0, 0, 0.1) inset;
+  font-weight: bold;
+  font-size: 14px;
 }
 

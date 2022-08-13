@@ -3,6 +3,11 @@
   padding: 0;
 }
 
+a{
+  color: inherit;
+  text-decoration: none;
+}
+
 .main {
   margin-top: 80px;
 }
@@ -22,6 +27,7 @@
 }
 
 .img-box img{
+  transition: all 1s;
   width: 100%;
   height: 100%;
   position: absolute;

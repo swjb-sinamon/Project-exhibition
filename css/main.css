@@ -1,0 +1,127 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  margin-top: 80px;
+}
+.slide{
+  width: 80vw;
+  height: 500px;
+  border: 1px solid black;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+}
+
+.img-box {
+  width: 100%;
+  height: 100%;
+}
+
+.img-box img{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 80vw;
+}
+
+.img-box img:first-child {
+  left:0;
+}
+
+.button-box {
+  width: 100%;
+  z-index: 100;
+  position: absolute;
+  top: 50%; left: 0;
+  transform: translateY(-50%);
+}
+
+.button {
+  position: relative;
+  width: 100%;
+}
+
+.button .left {
+  position: absolute;
+  top: 0;
+  left: 10px;
+}
+
+.button .right {
+  position: absolute;
+  top: 0;
+  right: 10px;
+}
+
+.button span {
+  font-size: 40px;
+}
+
+.yaer{
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.contents{
+  width: 100%;
+}
+
+.project_card{
+  width: 100%;
+  margin-bottom: 30px;
+  float: left;
+}
+
+.yaer-btn {
+  width: 100%;
+  height: 100px;
+  position: relative;
+  float: left;
+}
+
+.yaer-text {
+  width: 10%;
+  height: 50px;
+  border: 0;
+  background-color: inherit;
+  position: absolute;
+  top: 50px;
+  left: 10px;
+  transform: rotateY(-50%);
+  font-size: 20px;
+}
+
+.yaer-btn span {
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+
+.project_box{
+  float: left;
+  margin-right: 15px;
+  width: 300px;
+  height: 271.62px;
+  box-shadow: 4px 5px 7px 0px rgba(149, 157, 160, 0.6);
+
+}
+
+.project_box .img_box{
+  width: 260.27px;
+  height: 155.68px;
+  background-color: #F7FBFD;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.project_box .img_box img{
+  width: 260.27px;
+  height: 146.76px;
+}

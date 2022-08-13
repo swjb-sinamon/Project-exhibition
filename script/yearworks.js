@@ -1,5 +1,9 @@
 document.querySelector('.go-back').addEventListener("click", ()=>{
     history.back();
+    link = 'main.html'
+    if(history.state == null){
+        location.href  = link;
+    }
 })
 
 function filter() {

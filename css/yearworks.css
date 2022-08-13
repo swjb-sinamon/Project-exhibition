@@ -76,7 +76,7 @@ header .search-box{
 
 .project_box{
     float: left;
-    margin-right: 15px;
+    margin: 15px;
     width: 300px;
     height: 271.62px;
     box-shadow: 4px 5px 7px 0px rgba(149, 157, 160, 0.6);

@@ -47,7 +47,7 @@ h3{
     font-size: large;
     position: absolute;
     top: 0;
-    margin-top: 5px;
+    margin-top: 7px;
     margin-left: 10px;
 }
 
@@ -56,7 +56,7 @@ h3{
     width: 100%;
     border: 1px solid black;
     border-radius: 5px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .work-explain{
@@ -109,13 +109,7 @@ h3{
     border-radius: 5px;
     margin-bottom: 30px;
 }
-.git label{
-    position: absolute;
-    top: 0;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-}
+
 .nameid{
     position: relative;
     width: 100%;
@@ -169,11 +163,29 @@ h3{
 .nameid .email button{
     width: 130px;
     height: 40px;
-    border-radius: 1px solid black;
     border-radius: 5px;
 }
-
-.git{
-    height: 20px;
+.git>#git{
+    position: absolute;
+    margin-top: 23px;
+    margin-left: 10px;
+}
+.git>#github{
     width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    margin-top: 15px;
+    
+}
+.complete>button{
+    width: 100px;
+    height: 40px;
+    margin-top: 30px;
+    border-radius: 5px;
+    background-color: #006AA8;
+    color: white;
+    font-size: medium;
+    border-radius: none;
+    border: none;
+    float: right;
 }

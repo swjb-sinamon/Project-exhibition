@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    width: 100%;
+    height: 90px;
+    background-color: #f7fbfd;
+    box-shadow: 10px 10px 10px -10px gray;
+    text-align: left;
+}
+.header>h3{
+    line-height: 90px;
+    margin-left: 150px;
+}
+
+.work{
+    width: 70vw;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.work>h1{
+    margin-top: 40px;
+    margin-bottom: 30px;
+    color: #006AA8;
+}
+
+.authorbox>h1{
+    margin-top: 40px;
+    margin-bottom: 30px;
+    color: #006AA8;
+}
+
+h3{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.title-box{
+    width: 100%;
+    position: relative;
+}
+
+.title-box label{
+    font-size: large;
+    position: absolute;
+    top: 0;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.title-box input{
+    height: 40px;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.work-explain{
+    position: relative;
+    width: 100%;
+}
+
+.work-explain label{
+    font-size: large;
+    position: absolute;
+    top: 0;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.work-explain input{
+    width: 100%;
+    height: 150px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.filebox {
+    width: 100%;
+    position: relative; 
+}
+.authorbox>h3{
+    font-size: 20px;
+
+}
+
+.tag{   
+    position: relative;
+    width: 100%;
+}
+
+.tag label{
+    position: absolute;
+    top: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.tag input{
+    width: 100%;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+.git label{
+    position: absolute;
+    top: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+.nameid{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.nameid input#name_id{
+    width: 100%;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.authorbox{
+    position: relative;
+    
+}
+.nameid .email{
+    position: relative;
+    width: 100%;
+    float: left;
+}
+.nameid>label{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.nameid .email label{
+    position: absolute;
+    left: 10px;
+    top: 8px;
+}
+.nameid .email #email{
+    width: 30%;
+    height: 35px;
+    border: 1px solid black;
+    border-radius: 5px;
+    float: left;
+
+}
+.nameid .email p{
+    width: 35px;
+    height: 35px;
+    font-size: 25px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-left: 7px;
+    margin-right: 7px;
+    float: left;
+}
+
+.nameid .email button{
+    width: 130px;
+    height: 40px;
+    border-radius: 1px solid black;
+    border-radius: 5px;
+}
+
+.git{
+    height: 20px;
+    width: 100%;
+}

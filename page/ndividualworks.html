@@ -1,13 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/css/ndividualworks.css">
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="../css/ndividualworks.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="back">
+                <div class="box">
+                    <span class="material-symbols-outlined">
+                        arrow_back_ios
+                    </span>
+                    <h2>작품 보기</h2>
+                </div>
+            </div>
+        </header>
+        <div class="contents">
+            <div class="works">
+                <h1>작품 제목</h1>
+                <p class="description">
+                    2030년까지 탄소중립성을 달성하기 위한 Apple의 지속적인 노력의 일환으로 iPhone 13 
+                    및 iPhone 13 mini 제품 구성에는 전원 어댑터 및 EarPods이 포함되지 않습니다.
+                    대신 급속 충전을 지원하고 USB‑C 전원 어댑터 및 컴퓨터 포트와 호환되는 USB-C-Lightning
+                    기존에 사용 중이던 USB‑A-Lightning 케이블, 전원 어댑터, 헤드폰이 iPhone 모델과 호환된다면
+                    하지만 새로운 Apple 전원 어댑터 또는 헤드폰이 필요하다면 원하시는 제품을 구입할 수 있습니다.
+                    2030년까지 탄소중립성을 달성하기 위한 Apple의 지속적인 노력의 일환으로 iPhone 13
+                    전원 어댑터 및 EarPods이 포함되지 않습니다. 대신 급속 충전을 지원하고 USB‑C
+                    USB-C-Lightning 케이블은 포함되어 있습니다. 기존에 사용 중이던 USB‑A-Lightning
+                    iPhone 모델과 호환된다면 계속 사용하시길 권장합니다. 하지만 새로운 Apple
+                    원하시는 제품을 구입할 수 있습니다.
+                </p>
+                <div class="pic-box">
+                    <img src="../img/test.png" alt="">
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="infomation">
+                <div class="box1">
+                    <div class="name-git">
+                        <div class="info">
+                            <h1>만든사람</h1>
+                            <p>홍길동</p>
+                        </div>
+                        <div class="info">
+                            <h1>github</h1>
+                            <p>hmc041206@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="email-date">
+                        <div class="info">
+                            <h1>e-mail</h1>
+                            <p>hmc041206@gmail.com</p>
+                        </div>
+                        <div class="info">
+                            <h1>제작일</h1>
+                            <p>2022.12.06</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="bottom-menu">
+            <ul id="menu-bar">
+              <li>
+                <span class="material-symbols-outlined">
+                  add_circle
+                </span>
+                <a href="./uploadworks.html">작품 업로드</a>
+              </li>
+              <li>
+                <span class="material-symbols-outlined">
+                  construction
+                </span>
+                <a href="./AdminLogin.html">관리자 페이지</a>
+              </li>
+              <li>
+                <p>작품검색</p>
+                <input type="text" id="search" onkeyup="filter()">
+              </li>
+            </ul>
+          </div>
+          <div class="bottom-button">
+            <span class="material-symbols-outlined">
+              add
+            </span>
+          </div>
+        <script src="../script/ndividualworks.js"></script>
+    </body>
 </html>

@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    float: left;
+    box-shadow: 2px 4px 7px 0px rgba(0, 0,0,0.42);
+}
+
+.back {
+    width: 100%;
+    height: 100px;
+    position: relative;
+}
+
+.box {
+    width: 100%;
+    height: 100;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+header span {
+    float: left;
+    font-size: 30px;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+header h2 {
+    float: left;
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+.contents {
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+
+.works {
+    width: 60vw;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.works h1 {
+    font-size: 30px;
+    width: 100%;
+    margin-top: 60px;
+}
+
+.works .description {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.pic-box {
+    width: 100%;
+}
+
+.pic-box img {
+    width: 100%;
+    margin-top: 30px;
+}
+
+
+footer {
+    width: 100%;
+    height:150px;
+    float: left;
+    margin-top: 80px;
+    background-color: rgba(87, 85, 85, 0.1)
+}
+
+footer .infomation {
+    width: 50vw;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.box1 {
+    width: 100%;
+    height: 100%;
+    float: left;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.box1 h1 {
+    font-size: 20px;
+}
+
+.name-git {
+    width: 50%;
+    float: left;
+}
+
+.info {
+    width: 100%;
+    height: 30px;
+    float: left;
+}
+
+.info h1 {
+    float: left;
+    margin-right: 20px;
+}
+
+.info p {
+    float: left;
+}
+
+.email-date {
+    width: 50%;
+    float: left;
+}
+
+
+
+.bottom-menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+     width: 100%;
+     height: 100%;
+     z-index: 800;
+     background-color: rgba(0,0,0,0.6);
+     display: none;
+     transition: all 0.8;
+  }
+  .bottom-menu ul {
+    position: fixed;
+    right: 10px;
+    bottom: 80px;
+    width: 150px;
+    height: 140px;
+    z-index: 999;
+    border: 0;
+    border-radius:15px;
+    background-color: white;
+    box-shadow: 2px 4px 7px 0px rgba(0, 0,0,0.42);
+  }
+  
+  #menu-bar li:first-child {
+    margin-top: 10px;
+  }
+  
+  #menu-bar li {
+    width: 100%;
+    height: 30px;
+    font-size: 15px;
+    line-height: 30px;
+    margin-left: 10px;
+    position: relative;
+  }
+  
+  #menu-bar li a {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 10px;
+  }
+  
+  #menu-bar li input {
+    width: 90%;
+    height: 20px;
+    margin: 0 auto;
+  }
+  .bottom-button {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    z-index: 999;
+  }
+  
+  .bottom-button>span {
+    font-size: 40px;
+    color: white;
+    border: 0;
+    border-radius: 30px;
+    background-color: #0075E8;
+    box-shadow: 2px 4px 7px 0px rgba(0, 0,0,0.42),2px 3px 10px 0px rgba(167, 207, 246,1) inset, -3px -1px 5px 0px rgba(53, 77, 101, 0.42) inset;
+  }
+  
+  

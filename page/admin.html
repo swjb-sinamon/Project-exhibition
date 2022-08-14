@@ -12,15 +12,15 @@
 <body>
     <div class="yaer">
         <header>
-            <span class="fa-solid fa-chevron-left">
-                <a class="go-back"></a> 
+            <span class="material-symbols-outlined go-back">
+                arrow_back_ios
             </span>
     
             <h1 class="year">2022</h1>
 
             <div class="search-box">
                 <div class="search">
-                    <input type="text">
+                    <input type="text" id="search" onkeyup="filter()">
                     <span class="material-symbols-outlined">search</span>
                 </div>
             </div>
@@ -31,82 +31,105 @@
             <div class="project_card">
                 <div class="project_box">
                     <div class="img_box">
-                        <img src="https://images.unsplash.com/photo-1634655377962-e6e7b446e7e9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1528&q=80">
-                    </div>
-                    <h2>프로젝트</h2>
-                    <div class="fix-box">
-                        <button class="delete">삭제</button>
-                        <button class="fix">수락</button>
+                        <img src="https://images.unsplash.com/photo-1617358142775-4be217d9cc19?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80">
+                        <h2 class="title">프로젝트</h2>
+                        <div class="fix-box">
+                            <button class="delete">삭제</button>
+                            <button class="fix">수락</button>
+                        </div>
                     </div>
                 </div>
 
                 <div class="project_box">
                     <div class="img_box">
                         <img src="https://images.unsplash.com/photo-1634655377962-e6e7b446e7e9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1528&q=80">
+                        <h2 class="title">프로젝트</h2>
+                        <div class="fix-box">
+                            <button class="delete">삭제</button>
+                            <button class="fix">수락</button>
+                        </div>
                     </div>
-                    <h2>프로젝트</h2>
-                    <div class="fix-box">
-                        <button class="delete">삭제</button>
-                        <button class="accepted">수락됨</button>
+                </div>
+
+                <div class="project_box">
+                    <div class="img_box">
+                        <img src="https://images.unsplash.com/photo-1634655377962-e6e7b446e7e9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1528&q=80">
+                        <h2 class="title">프로젝트</h2>
+                        <div class="fix-box">
+                            <button class="delete">삭제</button>
+                            <button class="fix">수락</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project_box">
+                    <div class="img_box">
+                        <img src="https://images.unsplash.com/photo-1622547748225-3fc4abd2cca0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2064&q=80">
+                        <h2 class="title">프로젝트</h2>
+                        <div class="fix-box">
+                            <button class="delete">삭제</button>
+                            <button class="fix">수락</button>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="project_box">
-                <div class="img_box">
-                    <img src="https://images.unsplash.com/photo-1622547748225-3fc4abd2cca0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2064&q=80">
-                </div> 
-                <h2>프로젝트</h2>
-                <div class="fix-box">
-                    <button class="delete">삭제</button>
-                    <button class="fix">수락</button>
+            <div class="project_card">
+                <div class="project_box">
+                    <div class="img_box">
+                        <img src="https://images.unsplash.com/photo-1622547748225-3fc4abd2cca0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2064&q=80">
+                        <h2 class="title">프로젝트</h2>
+                        <div class="fix-box">
+                            <button class="delete">삭제</button>
+                            <button class="fix">수락</button>
+                        </div>
+                    </div>
                 </div>
-            </div>
 
-            <div class="project_box">
-                <div class="img_box">
-                    <img src="https://images.unsplash.com/photo-1634655377962-e6e7b446e7e9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1528&q=80">
+                <div class="project_box">
+                    <div class="img_box">
+                        <img src="https://images.unsplash.com/photo-1634655377962-e6e7b446e7e9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1528&q=80">
+                        <h2 class="title">프로젝트</h2>
+                        <div class="fix-box">
+                            <button class="delete">삭제</button>
+                            <button class="fix">수락</button>
+                        </div>
+                    </div>
                 </div>
-                <h2>프로젝트</h2>
-                <div class="fix-box">
-                    <button class="delete">삭제</button>
-                    <button class="accepted">수락됨</button>
-                </div>
-            </div>
 
-            <div class="project_box">
-                <div class="img_box">
-                    <img src="https://images.unsplash.com/photo-1634655377962-e6e7b446e7e9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1528&q=80">
+                <div class="project_box">
+                    <div class="img_box">
+                        <img src="https://images.unsplash.com/photo-1622547748225-3fc4abd2cca0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2064&q=80">
+                        <h2 class="title">프로젝트</h2>
+                        <div class="fix-box">
+                            <button class="delete">삭제</button>
+                            <button class="fix">수락</button>
+                        </div>
+                    </div>
                 </div>
-                <h2>프로젝트</h2>
-                <div class="fix-box">
-                    <button class="delete">삭제</button>
-                    <button class="accepted">수락됨</button>
-                </div>
-            </div>
 
-            <div class="project_box">
-                <div class="img_box">
-                    <img src="https://images.unsplash.com/photo-1622547748225-3fc4abd2cca0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2064&q=80">
-                </div> 
-                <h2>프로젝트</h2>
-                <div class="fix-box">
-                    <button class="delete">삭제</button>
-                    <button class="fix">수락</button>
+                <div class="project_box">
+                    <div class="img_box">
+                        <img src="https://images.unsplash.com/photo-1617358142775-4be217d9cc19?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80">
+                        <h2 class="title">프로젝트</h2>
+                        <div class="fix-box">
+                            <button class="delete">삭제</button>
+                            <button class="fix">수락</button>
+                        </div>
+                    </div>
                 </div>
-            </div>
 
-            <div class="msg_box">
-                <p>정말로 삭제하시겠습니까?</p>
-                <div class="button-box">
-                    <button class="yes">예</button>
-                    <button class="no">아니요</button>
+                <div class="msg_box">
+                    <p>정말로 삭제하시겠습니까?</p>
+                    <div class="button-box">
+                        <button class="yes">예</button>
+                        <button class="no">아니요</button>
+                    </div>
                 </div>
-                
 
             </div>
         </div>
     </div>
-    <script src="../script/admin.js"></script>
+    <script src="../script/yearworks.js"></script>
 </body>
 </html>

@@ -64,7 +64,7 @@ header h2 {
     width: 100%;
 }
 
-.pic-box img {
+.pic-box video {
     width: 100%;
     margin-top: 30px;
 }
@@ -78,7 +78,7 @@ footer {
     background-color: rgba(87, 85, 85, 0.1)
 }
 
-footer .infomation {
+footer .information {
     width: 50vw;
     height: 100%;
     margin: 0 auto;
@@ -107,23 +107,25 @@ footer .infomation {
     width: 100%;
     height: 30px;
     float: left;
+    margin: 5px;
 }
 
 .info h1 {
     float: left;
-    margin-right: 20px;
+    margin-right: 80px;
+    margin-top: 40px;
 }
 
 .info p {
     float: left;
+    margin-right: 40px;
+    margin-top: 40px;
 }
 
 .email-date {
     width: 50%;
     float: left;
 }
-
-
 
 .bottom-menu {
     position: fixed;
@@ -189,5 +191,3 @@ footer .infomation {
     background-color: #0075E8;
     box-shadow: 2px 4px 7px 0px rgba(0, 0,0,0.42),2px 3px 10px 0px rgba(167, 207, 246,1) inset, -3px -1px 5px 0px rgba(53, 77, 101, 0.42) inset;
   }
-  
-  

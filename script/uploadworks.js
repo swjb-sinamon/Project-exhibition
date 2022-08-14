@@ -1,3 +1,7 @@
+document.querySelector('.go-back').addEventListener("click", ()=>{
+    history.back();
+});  
+
 const inputs = document.querySelectorAll('input');
 const labels = document.querySelectorAll('label');
 

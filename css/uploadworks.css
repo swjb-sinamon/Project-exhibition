@@ -25,9 +25,16 @@ li:hover{
     box-shadow: 10px 10px 10px -10px gray;
     text-align: left;
 }
-.header>h3{
+
+.header span {
     line-height: 90px;
+    float: left;
     margin-left: 150px;
+}
+.header>h3{
+    float: left;
+    line-height: 90px;
+    margin-left: 10px;
 }
 
 .work{

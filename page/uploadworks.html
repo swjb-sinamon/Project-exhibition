@@ -30,26 +30,29 @@
         </div>
 
         <div class="filebox">
-            <label for="ex_file">파일 첨부</label>
             <input type="file" id="ex_file">
         </div>
 
         <div class="productiondate">
-            <button>년도</button>
-            <div class="year">
-                <p>2020</p>
-            </div>
-
-            <button>월</button>
-
-            <div class="month">
-                <p>1월</p>
-            </div>
-
-            <button>일</button>
-
-            <div class="datee">
-                <p>1일</p>
+            <div class="button-box">
+                <div class="btn-box">
+                    <button class="year-btn">년도 ▼</button>
+                    <ul class="year">
+                        <li>2020</li>
+                    </ul>
+                </div>
+                <div class="btn-box">
+                    <button class="month-btn">월 ▼</button>
+                    <ul class="month">
+                        <li>1월</li>
+                    </ul>
+                </div>
+                <div class="btn-box">
+                    <button class="date-btn">일 ▼</button>
+                    <ul class="date">
+                        <li>1일</li>
+                    </ul>
+                </div>
             </div>
         </div>
 
@@ -68,10 +71,7 @@
                     <label for="email">이메일 주소</label>
                     <input type="text" id="email">
                     <p>@</p>
-                    <button>gmail.com</button>
-                    <!-- <div class="gmail-address">
-                        <p>naver.com</p>
-                    </div> -->
+                    <button>gmail.com ▼</button>
                 </div>
                 <div class="git">
                     <label for="git" id="git">github 주소를 입력하세요</label>

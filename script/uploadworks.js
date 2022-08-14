@@ -120,3 +120,17 @@ function makeDayLi(dayLast) {
         })
     });
 }
+
+const addrBtn = document.querySelector('.addr-btn');
+
+addrBtn.addEventListener('click',() => {
+    const emailAddr = document.querySelector('.email-addr');
+    emailAddr.style.display = "block";
+    const emailLi = document.querySelectorAll('.email-addr li');
+    emailLi.forEach(e=> {
+        e.addEventListener('click',()=> {
+            addrBtn.innerHTML = e.textContent;
+            emailAddr.style.display = "none";
+        })
+    })
+})

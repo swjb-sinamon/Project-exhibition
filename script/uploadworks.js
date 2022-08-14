@@ -80,48 +80,33 @@ monthLi.forEach(e => {
 });
 
 function makeDay() {
-    let dayFirst = 1;
     if((yearval%4 == 0 && yearval%100 != 0) || yearval%400 == 0){
         if(monthval == 1 || monthval==3 || monthval == 5 || monthval ==7 || monthval==8 || monthval==10|| monthval == 12){
-            for(dayFirst; dayFirst<=31; dayFirst++){
-                const li = document.createElement('li');
-                li.textContent = dayFirst;
-                day.appendChild(li);
-            }
+            makeDayLi(31);
         }else if(monthval == 2) {
-            for(dayFirst; dayFirst<=29;dayFirst++){
-                const li = document.createElement('li');
-                li.textContent = dayFirst;
-                day.appendChild(li);
-            }
+            makeDayLi(29);
         }else {
-            for(dayFirst; dayFirst<=30;dayFirst++){
-                const li = document.createElement('li');
-                li.textContent = dayFirst;
-                day.appendChild(li);
-            }
+            makeDayLi(30);
         }
     }else {
         if(monthval == 1 || monthval==3 || monthval == 5 || monthval ==7 || monthval==8 || monthval==10|| monthval == 12){
-            for(dayFirst; dayFirst<=31; dayFirst++){
-                const li = document.createElement('li');
-                li.textContent = dayFirst;
-                day.appendChild(li);
-            }
+            makeDayLi(31);
         }else if(monthval == 2) {
-            for(dayFirst; dayFirst<=28;dayFirst++){
-                const li = document.createElement('li');
-                li.textContent = dayFirst;
-                day.appendChild(li);
-            }
+            makeDayLi(28);
         }else {
-            for(dayFirst; dayFirst<=30;dayFirst++){
-                const li = document.createElement('li');
-                li.textContent = dayFirst;
-                day.appendChild(li);
-            }
+            makeDayLi(30);
         }
     }
+}
+
+function makeDayLi(dayLast) {
+    let dayFirst = 1;
+    for(dayFirst; dayFirst<=dayLast; dayFirst++){
+        const li = document.createElement('li');
+        li.textContent = dayFirst;
+        day.appendChild(li);
+    }
+
     const dayLi = document.querySelectorAll('.date li');
 
     dayLi.forEach(e => {

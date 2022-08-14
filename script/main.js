@@ -65,11 +65,33 @@ yearText.forEach(e => {
 
 const bottomButton = document.querySelector('.bottom-button');
 let count = 0;
+let j = 0;
+
+function filter() {
+  let search = document.getElementById("search").value.toLowerCase();
+  let project_box = document.getElementsByClassName("project_box");
+
+  for (let i = 0; i < project_box.length; i++) {
+    title = project_box[i].getElementsByClassName("title");
+    subheading = project_box[i].getElementsByClassName("subheading");
+    if (title[0].innerHTML.toLowerCase().indexOf(search) != -1 || subheading[0].innerHTML.toLowerCase().indexOf(search) != -1){
+      project_box[i].style.display = "flex";
+    } else {
+      project_box[i].style.display = "none";
+    }
+  }
+}
 
 bottomButton.addEventListener('click', () => {
   const bottomMenu = document.querySelector('.bottom-menu');
   bottomMenu.addEventListener('click', () => {
-    bottomMenu.style.display = "none";
+    const search = document.querySelector('#search');
+    search.addEventListener('click', () => {
+      bottomMenu.style.display = "block";
+    });
+    search.addEventListener('blur', () => {
+      bottomMenu.style.display = "none";
+    })
   });
   if(count == 0){
     bottomMenu.style.display = "block";

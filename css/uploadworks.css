@@ -2,11 +2,22 @@
     margin: 0;
     padding: 0;
 }
-
-ul {
+ul{
     list-style: none;
+    z-index: 1000;
+    position: relative;
+    border: 0.5px solid black;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    width: 130px;
 }
-
+li:hover{
+    color: red;
+}
+.btn-box:hover{
+    background-color: rgba(160, 160, 160, 0.318);
+    border-radius: 5px;
+}
 .header{
     width: 100%;
     height: 90px;
@@ -88,37 +99,33 @@ h3{
     width: 100%;
     position: relative; 
 }
-
-.productiondate {
+.productiondate{
     width: 100%;
     height: 50px;
     margin-top: 20px;
 }
-
-.button-box {
-    width: 100%;
+.button-box{
+    width: 100;
     height: 50px;
     float: left;
 }
-
-.btn-box {
+.btn-box{
     float: left;
 }
-
 .btn-box button{
     float: left;
     width: 130px;
     height: 40px;
     border: 1px solid black;
     background-color: inherit;
+    border-radius: 5px;
 }
-
-.btn-box ul {
-    display: none; 
+.btn-box ul{
+    display: none;
 }
-
 .authorbox>h3{
     font-size: 20px;
+
 }
 
 .tag{   
@@ -182,22 +189,23 @@ h3{
 
 }
 .nameid .email p{
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     font-size: 30px;
     border: 1px solid black;
     border-radius: 5px;
-    margin: 7px;
+    margin:7px;
     float: left;
 }
-
 .nameid .email button{
     width: 150px;
     height: 40px;
     border-radius: 5px;
 }
-
-.git {
+.nameid .email button:hover{
+    background-color: rgba(153, 153, 153, 0.668);
+}
+.git{
     width: 100%;
     float: left;
     position: relative;
@@ -225,4 +233,7 @@ h3{
     border-radius: none;
     border: none;
     float: right;
+}
+.complete>button:hover{
+    background-color: rgba(0, 60, 94, 0.915);
 }

@@ -1,7 +1,3 @@
-document.querySelector('.go-back').addEventListener("click", ()=>{
-  history.back();
-});
-
 function filter() {
     let search = document.getElementById("search").value.toLowerCase();
     let project_box = document.getElementsByClassName("project_box");

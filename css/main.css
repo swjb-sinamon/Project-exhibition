@@ -43,6 +43,10 @@ ul {
   left:0;
 }
 
+.img-box img:last-child {
+  left:-80vw;
+}
+
 .button-box {
   width: 100%;
   z-index: 100;
@@ -92,6 +96,7 @@ ul {
 .year-btn {
   width: 100%;
   height: 70px;
+  float: left;
   position: relative;
 }
 

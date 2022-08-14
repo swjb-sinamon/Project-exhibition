@@ -12,12 +12,13 @@
 
 <body>
     <div class="header">
-        <span class="material-symbols-outlined go-back">
-            <a href="">arrow_back_ios</a>
-        </span>
-        <h3 class="go-back">작품 업로드</h3>
+        <a href="./main.html">
+            <span class="material-symbols-outlined">
+                arrow_back_ios
+            </span>
+            <h3>작품 업로드</h3>
+        </a>
     </div>
-
     <div class="work">
         <h1>작품정보</h1>
         <h3>제목</h3>
@@ -29,8 +30,7 @@
         <h3>작품설명</h3>
 
         <div class="work-explain">
-            <label for="explain">작품에 대한 설명을 입력하세요</label>
-            <input type="text" id="explain">
+            <textarea type="text" id="explain">작품에 대한 설명을 입력하세요</textarea>
         </div>
 
         <div class="filebox">
@@ -39,21 +39,7 @@
 
         <div class="productiondate">
             <div class="button-box">
-                <div class="btn-box">
-                    <button class="year-btn">제작년도 ▼</button>
-                    <ul class="year">
-                    </ul>
-                </div>
-                <div class="btn-box">
-                    <button class="month-btn">월 ▼</button>
-                    <ul class="month">
-                    </ul>
-                </div>
-                <div class="btn-box">
-                    <button class="date-btn">일 ▼</button>
-                    <ul class="date">
-                    </ul>
-                </div>
+                <input type="date">
             </div>
         </div>
 

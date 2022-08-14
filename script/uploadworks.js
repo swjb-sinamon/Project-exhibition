@@ -62,13 +62,16 @@ let monthval = date.getMonth();
 yearLi.forEach(e => {
     e.addEventListener('click', ()=> {
         yearval = e.textContent;
-        console.log(yearval);
+        yearBtn.innerText = yearval;
+        year.style.display = "none";
     });
 })
 
 monthLi.forEach(e => {
     e.addEventListener('click',() => {
         monthval = e.textContent;
+        monthBtn.innerText = monthval;
+        month.style.display = "none";
     });
 });
 
@@ -115,3 +118,11 @@ if((yearval%4 == 0 && yearval%100 != 0) || yearval%400 == 0){
         }
     }
 }
+const dayLi = document.querySelectorAll('.date li');
+
+dayLi.forEach(e => {
+    e.addEventListener('click',()=> {
+        dayBtn.innerText = e.textContent;
+        day.style.display ="none";
+    })
+})

@@ -1,3 +1,7 @@
+document.querySelector('.go-back').addEventListener("click", ()=>{
+  history.back();
+});
+
 const del = document.querySelectorAll(".delete");
 
 del.forEach( e => {
@@ -10,7 +14,7 @@ function msg(e){
   const msgBox = document.querySelector('.msg_box');
   msgBox.style.display="block";
   yes.addEventListener("click", () => {
-    const project_box = e.target.parentNode.parentNode;
+    const project_box = e.target.parentNode.parentNode.parentNode;
     project_box.remove();   
     msgBox.style.display = "none";
   });

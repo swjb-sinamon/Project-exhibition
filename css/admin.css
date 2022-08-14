@@ -88,16 +88,27 @@ header .search-box{
 }
 
 .project_box .img_box{
-  width: 260.27px;
-  height: 155.68px;
-  background-color: black;
-  margin-bottom: 5px;
-  padding: 10px;
+  /* width: 260.27px;
+  border-top: 4px solid black;
+  border-bottom: 4px solid black;
+  padding: 7px;
+  margin-left: 13px;
+  margin-top: 13px; */
 }
 
 .project_box .img_box img{
-  width: 100%;
+  box-sizing: border-box;
+  width: 260.27px;
   height: 146.76px;
+  margin-left: 21px;
+  margin-top: 15px; 
+  border-top: 4.5px solid black;
+  border-bottom: 4.5px solid black;
+}
+
+.project_box h2{
+  margin-left: 20px;
+  margin-top: 8px;
 }
 
 .project_box .fix-box {

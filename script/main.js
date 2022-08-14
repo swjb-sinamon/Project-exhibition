@@ -68,6 +68,9 @@ let count = 0;
 
 bottomButton.addEventListener('click', () => {
   const bottomMenu = document.querySelector('.bottom-menu');
+  bottomMenu.addEventListener('click', () => {
+    bottomMenu.style.display = "none";
+  });
   if(count == 0){
     bottomMenu.style.display = "block";
     count++;

@@ -40,6 +40,7 @@ for(monthFirst; monthFirst<=monthLast; monthFirst++){
 
 const yearBtn = document.querySelector('.year-btn');
 const monthBtn = document.querySelector('.month-btn');
+const dayBtn = document.querySelector('.date-btn');
 
 yearBtn.addEventListener('click', e=> {
     year.style.display = "block";
@@ -47,4 +48,70 @@ yearBtn.addEventListener('click', e=> {
 
 monthBtn.addEventListener('click', ()=> {
     month.style.display = "block";
+});
+
+dayBtn.addEventListener('click', ()=>{
+    day.style.display ="block";
 })
+
+const yearLi = document.querySelectorAll('.year li');
+const monthLi = document.querySelectorAll('.month li');
+let yearval = date.getFullYear();
+let monthval = date.getMonth();
+
+yearLi.forEach(e => {
+    e.addEventListener('click', ()=> {
+        yearval = e.textContent;
+        console.log(yearval);
+    });
+})
+
+monthLi.forEach(e => {
+    e.addEventListener('click',() => {
+        monthval = e.textContent;
+    });
+});
+
+let dayFirst = 1;
+
+if((yearval%4 == 0 && yearval%100 != 0) || yearval%400 == 0){
+    if(monthval == 1 || monthval==3 || monthval == 5 || monthval ==7 || monthval==8 || monthval==10|| monthval == 12){
+        for(dayFirst; dayFirst<=31; dayFirst++){
+            const li = document.createElement('li');
+            li.textContent = dayFirst;
+            day.appendChild(li);
+        }
+    }else if(monthval == 2) {
+        for(dayFirst; dayFirst<=29;dayFirst++){
+            const li = document.createElement('li');
+            li.textContent = dayFirst;
+            day.appendChild(li);
+        }
+    }else {
+        for(dayFirst; dayFirst<=30;dayFirst++){
+            const li = document.createElement('li');
+            li.textContent = dayFirst;
+            day.appendChild(li);
+        }
+    }
+}else {
+    if(monthval == 1 || monthval==3 || monthval == 5 || monthval ==7 || monthval==8 || monthval==10|| monthval == 12){
+        for(dayFirst; dayFirst<=31; dayFirst++){
+            const li = document.createElement('li');
+            li.textContent = dayFirst;
+            day.appendChild(li);
+        }
+    }else if(monthval == 2) {
+        for(dayFirst; dayFirst<=28;dayFirst++){
+            const li = document.createElement('li');
+            li.textContent = dayFirst;
+            day.appendChild(li);
+        }
+    }else {
+        for(dayFirst; dayFirst<=30;dayFirst++){
+            const li = document.createElement('li');
+            li.textContent = dayFirst;
+            day.appendChild(li);
+        }
+    }
+}

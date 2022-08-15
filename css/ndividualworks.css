@@ -189,6 +189,10 @@ footer .information {
     z-index: 999;
   }
   
+  .bottom-button:hover {
+    cursor: pointer;
+  }
+  
   .bottom-button>span {
     font-size: 40px;
     color: white;

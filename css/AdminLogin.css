@@ -70,6 +70,7 @@ header span a{
   height: 43px;
   border: 1px solid rgba(0, 0, 0, 0.72);
   border-radius: 7px;
+  padding: 3px;
 }
 .pass{
   width: 100%;
@@ -85,6 +86,7 @@ header span a{
   height: 43px;
   border: 1px solid rgba(0, 0, 0, 0.72);
   border-radius: 7px;
+  padding: 3px;
 }
 button{
   margin-top: 27px;

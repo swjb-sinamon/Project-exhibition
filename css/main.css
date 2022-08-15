@@ -43,10 +43,6 @@ ul {
   left:0;
 }
 
-.img-box img:last-child {
-  left:-80vw;
-}
-
 .button-box {
   width: 100%;
   z-index: 100;

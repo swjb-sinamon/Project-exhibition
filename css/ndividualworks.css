@@ -180,6 +180,7 @@ footer .information {
     width: 90%;
     height: 20px;
     margin: 0 auto;
+    padding:5px;
   }
   .bottom-button {
     position: fixed;

@@ -16,7 +16,7 @@ ul {
   margin-top: 80px;
 }
 .slide{
-  width: 68.2vw;
+  width: 78vw;
   height: 500px;
   border: 1px solid black;
   border-radius: 20px;
@@ -25,60 +25,21 @@ ul {
   position: relative;
 }
 
-.img-box {
-  width: 100%;
-  height: 100%;
-}
-
-.img-box img{
-  transition: all 1.7s;
-  width: 100%;
-  height: 100%;
+.slide li {
   position: absolute;
+  left:80vw;
   top: 0;
-  left: 80vw;
-  object-fit: cover;
 }
 
-.img-box img:first-child {
-  left:0;
+.slide li:first-child{
+  left: 0;
 }
 
-.button-box {
-  width: 100%;
-  z-index: 100;
-  position: absolute;
-  top: 50%; left: 0;
-  transform: translateY(-50%);
+.slide li a img {
+  width: 80vw;
+  height: 500px;
 }
 
-.button {
-  position: relative;
-  width: 100%;
-}
-
-.button:hover {
-  cursor: pointer;
-}
-
-.button .left {
-  position: absolute;
-  top: 0;
-  left: 30px;
-}
-
-.button .right {
-  position: absolute;
-  top: 0;
-  right: 20px;
-}
-
-.button span {
-  color: #F5F5F5;
-  font-size: 40px;
-  font-weight: bold;
-  text-shadow: 1px 5px 15px rgba(0, 0, 0, 0.72);
-}
 
 .yaer{
   width: 80vw;
@@ -87,7 +48,7 @@ ul {
 
 .contents{
   width: 100%;
-  margin: 45px 115px;
+  margin: 15px;
 }
 
 .project_card{

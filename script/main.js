@@ -1,87 +1,4 @@
-const imgs = document.querySelectorAll('.img');
-const left = document.querySelector(".left");
-const right = document.querySelector(".right");
 const yearText = document.querySelectorAll('.year-text');
-
-let index = 0;
-const length = imgs.length-1;
-
-left.addEventListener("click", e=>{
-  if(index == 0){
-    imgs[index].style.left = "80vw";
-    index = length;
-    imgs[index].style.left = "0";
-    let ind = index;
-    ind--;
-    imgs[ind].style.left = "-80vw";
-  }else {
-    imgs[index].style.left = '80vw';
-    let ind = index;
-    index--;
-    imgs[index].style.left = '0';
-    setTimeout( () => {
-      slideimgsleft(ind);
-    },1000);
-  }
-  clearInterval(interval);
-  interval = getInterval();
-});
-
-right.addEventListener("click",() => {
-  imgs[length].style.left = '80vw';
-  if(index > length) {
-    imgs[index].style.left = "-80vw";
-    index = 0;
-    imgs[index].style.left = "0";
-  }else {
-    imgs[index].style.left="-80vw";
-    let ind = index;
-    index++;
-    if(index > length) {
-      index = 0;
-    }
-    imgs[index].style.left = "0";
-    setTimeout(() => {
-      slideimgsright(ind);
-    },1000);
-  }
-  clearInterval(interval);
-  interval = getInterval();
-});
-
-
-const getInterval = () => {
-  return setInterval(()=>{
-    imgs[index].style.left="-80vw";
-    let ind = index;
-    index++;
-    if(index > length) {
-      index = 0;
-    }
-    imgs[index].style.left = "0";
-    setTimeout(() => {
-      slideimgsright(ind);
-    },1000);
-  },2000);
-}
-
-function slideimgsright(ind) {
-  imgs[ind].style.display = "none";
-  imgs[ind].style.left = "80vw";
-  setTimeout(() => {
-    imgs[ind].style.display = "block";
-  },500);
-}
-
-function slideimgsleft(ind) {
-  imgs[ind].style.display = "none";
-  imgs[ind].style.left = "-80vw";
-  setTimeout(() => {
-    imgs[ind].style.display = "block";
-  },500);
-}
-
-let interval = getInterval();
 
 const data = new Date();
 const year = data.getFullYear();
@@ -111,6 +28,8 @@ function filter() {
   }
 }
 
+
+
 const search = document.querySelector('.search');
 search.addEventListener('click', () => {
     j++;
@@ -135,4 +54,30 @@ bottomButton.addEventListener('click', () => {
     bottomMenu.style.display = "none";
     count = 0;
   }
+})
+
+$(document).ready(function(){
+  let slide = $(".slide li");
+  let sno = 0;
+  let lastno = slide.length-1;
+
+  function playSlide(){
+    $(slide[sno]).animate({
+        left:'-80vw'
+    },1000, function(){
+        $(this).css({left:'80vw'});
+    });
+
+    sno++;
+    if(sno>lastno) {
+        sno = 0;
+    }
+    $(slide[sno]).animate({
+        left:'0px'
+    },1000);
+}
+
+setInterval(function(){
+    playSlide();
+},2000);
 })

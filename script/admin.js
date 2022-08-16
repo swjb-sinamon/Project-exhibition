@@ -18,3 +18,17 @@ function msg(e){
     msgBox.style.display = "none";
   })
 }
+
+function filter() {
+  let search = document.getElementById("search").value.toLowerCase();
+  let project_box = document.getElementsByClassName("project_box");
+
+  for (let i = 0; i < project_box.length; i++) {
+    title = project_box[i].getElementsByClassName("title");
+    if (title[0].innerHTML.toLowerCase().indexOf(search) != -1){
+      project_box[i].style.display = "flex";
+    } else {
+      project_box[i].style.display = "none";
+    }
+  }
+}

@@ -8,6 +8,14 @@ a{
     text-decoration: none;
 }
 
+ul {
+    list-style: none;
+}
+
+input {
+    padding: 3px;
+}
+
 header {
     width: 100%;
     height: 100px;
@@ -67,11 +75,12 @@ header h2 {
 
 .pic-box {
     width: 100%;
+    padding-top: 30px;
 }
 
-.pic-box video {
+.pic-box img {
     width: 100%;
-    margin-top: 30px;
+    height: 530px;
 }
 
 
@@ -132,28 +141,19 @@ footer .information {
     float: left;
 }
 
-.bottom-menu {
-    position: fixed;
-    left: 0;
-    top: 0;
-     width: 100%;
-     height: 100%;
-     z-index: 800;
-     background-color: rgba(0,0,0,0.6);
-     display: none;
-     transition: all 0.8;
-  }
-  .bottom-menu ul {
+#menu-bar{
     position: fixed;
     right: 10px;
-    bottom: 80px;
-    width: 150px;
+    bottom: 90px;
+    width: 170px;
     height: 140px;
     z-index: 999;
     border: 0;
     border-radius:15px;
     background-color: white;
     box-shadow: 2px 4px 7px 0px rgba(0, 0,0,0.42);
+    display: none;
+    transition: all 1s;
   }
   
   #menu-bar li:first-child {
@@ -177,10 +177,9 @@ footer .information {
   }
   
   #menu-bar li input {
-    width: 90%;
+    width: 80%;
     height: 20px;
     margin: 0 auto;
-    padding:5px;
   }
   .bottom-button {
     position: fixed;
@@ -194,10 +193,16 @@ footer .information {
   }
   
   .bottom-button>span {
-    font-size: 40px;
+    font-size: 35px;
+    text-align: center;
+    line-height: 53px;
     color: white;
+    width: 53px;
+    height: 53px;
     border: 0;
     border-radius: 30px;
     background-color: #0075E8;
     box-shadow: 2px 4px 7px 0px rgba(0, 0,0,0.42),2px 3px 10px 0px rgba(167, 207, 246,1) inset, -3px -1px 5px 0px rgba(53, 77, 101, 0.42) inset;
   }
+  
+  

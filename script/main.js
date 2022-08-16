@@ -36,22 +36,22 @@ search.addEventListener('click', () => {
     console.log(j);
 });
 
-const bottomMenu = document.querySelector('.bottom-menu');
-bottomMenu.addEventListener('click', () => {
+const bottomBar = document.querySelector('#menu-bar');
+bottomBar.addEventListener('click', () => {
   if(j>0){
-    bottomMenu.style.display = "block";
+    bottomBar.style.display = "block";
     j = 0;
   }else {
-    bottomMenu.style.display = "none";
+    bottomBar.style.display = "none";
   }
 });
 
 bottomButton.addEventListener('click', () => {
   if(count == 0){
-    bottomMenu.style.display = "block";
+    bottomBar.style.display = "block";
     count++;
   }else {
-    bottomMenu.style.display = "none";
+    bottomBar.style.display = "none";
     count = 0;
   }
 })

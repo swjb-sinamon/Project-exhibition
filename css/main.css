@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+input {
+  padding: 3px;
+}
+
 a{
   color: inherit;
   text-decoration: none;
@@ -114,18 +118,6 @@ ul {
   border-bottom: 5px solid black;
 }
 
-.bottom-menu {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 800;
-  background-color: rgba(0,0,0,0.5);
-  display: none;
-  transition: all 0.8;
-}
-
 .project_box h2{
   margin-left: 20px;
   margin-right: 10px;
@@ -138,17 +130,19 @@ ul {
   margin-top: 3px;
 }
 
-.bottom-menu ul {
+#menu-bar{
   position: fixed;
   right: 10px;
-  bottom: 80px;
-  width: 150px;
+  bottom: 90px;
+  width: 170px;
   height: 140px;
   z-index: 999;
   border: 0;
   border-radius:15px;
   background-color: white;
   box-shadow: 2px 4px 7px 0px rgba(0, 0,0,0.42);
+  display: none;
+  transition: all 1s;
 }
 
 #menu-bar li:first-child {
@@ -172,7 +166,7 @@ ul {
 }
 
 #menu-bar li input {
-  width: 90%;
+  width: 80%;
   height: 20px;
   margin: 0 auto;
 }

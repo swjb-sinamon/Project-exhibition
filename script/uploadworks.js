@@ -21,6 +21,7 @@ for(const input of inputs){
 const addrBtn = document.querySelector('.addr-btn');
 
 addrBtn.addEventListener('click',() => {
+    const btnAddr = document.querySelector('.btn-addr');
     const emailAddr = document.querySelector('.email-addr');
     emailAddr.style.display = "block";
     const emailLi = document.querySelectorAll('.email-addr li');
@@ -30,4 +31,23 @@ addrBtn.addEventListener('click',() => {
             emailAddr.style.display = "none";
         })
     })
+    emailAddr.addEventListener('mouseover',() => {
+        emailAddr.addEventListener('mouseleave',() => {
+            emailAddr.style.display = "none";
+        })
+    })
 })
+
+
+const textarea = document.querySelector('#explain');
+let msg = "작품에 대한 설명을 입력하세요"
+textarea.addEventListener('click', e=> {
+    if(e.target.value == msg){
+        e.target.value = "";
+    }
+    textarea.addEventListener('blur',e => {
+        if(e.target.value == ""){
+            e.target.value = msg;
+        }
+    })
+});
